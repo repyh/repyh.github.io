@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.parallax-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.parallax-wrapper img {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    width: 100%;
+}
+
+.blur {
+    filter: blur(8px);
+}
+
+.profile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+}
+
+.profile img {
+    border-radius: 50%;
+    border: 5px solid #171717;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+}
+
+.profile h1 {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 170%);
+    position: relative;
+    font-weight: lighter;
+}
+
+.navigation {
+    position: fixed;
+    bottom: 12%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    background-color: #171717;
+    padding: 12px 12px 12px 12px;
+    border-radius: 8px;
+}
+
+.color {
+    color: #EDEDED !important;
+    font-family: Roboto;
+}
+
+.credit {
+    position: fixed;
+    color: darkgrey;
+    font-size: 10px;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    bottom: 5px;
+    left: 10px;
+}
+
+.project-container {
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    background-color: #171717;
+}
+
+.skills-container {
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #171717;
+}
+
+.com-container {
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #171717;
+}
+
+.ptitle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+    transform: translate(-50%, -80%);
+    font-weight: lighter;
+    color: #201b1b;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: whitesmoke;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.card {
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.card-wrapper {
+    position: absolute;
+    top: 53.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.skill {
+    border-collapse: separate;
+    border-spacing: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gap {
+    margin-bottom: 50px;
+}
+
+.badge {
+    color: white !important;
+    position: relative;
+    top: -0.5px;
+    background-color: #171717 !important;
+}
+
+.com {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+}
+
+.com tr th {
+    border: 2px solid white;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    font-weight: lighter;
+}
