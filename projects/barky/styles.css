@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.barky {
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Roboto;
+    text-align: center;
+    font-size: 90px;
+}
+
+#desc {
+    position: absolute;
+    top: 18rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: consolas;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.form-wrapper {
+    position: absolute;
+    top: 22rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.url {
+    width: 400px;
+}
+
+.response-wrapper p {
+    font-family: consolas;
+    position: absolute;
+    top: 26rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+textarea {
+    position: absolute;
+    top: 30rem;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: auto;
+    width: 700px;
+    height: 600px;
+    padding: 5px 5px;
+    font-family: "Lucida Console", Monaco, monospace;
+}

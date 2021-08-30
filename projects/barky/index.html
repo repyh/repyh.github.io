@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <title>Barky</title>
+    </head>
+    <body>
+        <div class="title-wrapper">
+            <h1 class="barky">Barky</h1>
+            <p id="desc">Bark an API into giving you data!</p>
+        </div>
+        <div class="form-wrapper">
+            <form class="row g-3">
+                <div class="col-auto url">
+                    <label for="inputPassword2" class="visually-hidden">api-url</label>
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="Endpoint">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3" id="fetch-btn">Bark (GET)</button>
+                </div>
+            </form>
+        </div>
+        <div class="response-wrapper" id="rspn">
+        </div>
+        <div class="fetched-wrapper">
+            <textarea id="fetch-result" readonly cols="30" rows="10">This is where your fetched data will show up!</textarea>
+        </div>
+        <div class="empty" style="position: absolute; top: 1000px; margin-top: 100px; opacity: 0;">a</div>
+    </body>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</html>
