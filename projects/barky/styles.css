@@ -50,15 +50,10 @@ textarea {
     top: 30rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 700px;
-    height: 600px;
+    width: 700px !important;
+    height: 600px !important;
     padding: 5px 5px;
     font-family: "Lucida Console", Monaco, monospace;
-}
-
-.form-control {
-    width: 700px;
-    height: 600px;
 }
 
 #quota {
