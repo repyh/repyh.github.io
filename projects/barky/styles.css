@@ -51,7 +51,7 @@ textarea {
     left: 50%;
     transform: translateX(-50%);
     outline: auto;
-    width: 700px;
+    width: 400px;
     height: 600px;
     padding: 5px 5px;
     font-family: "Lucida Console", Monaco, monospace;
