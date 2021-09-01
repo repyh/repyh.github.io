@@ -7,4 +7,4 @@ It uses quota system to prevent the website from being ratelimited.
 
 ### Updates
 - Added quota system (25 quotas/day)
-- Quota resets every 8am UTC
+- Quota resets every 9am UTC
