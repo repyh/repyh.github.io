@@ -25,6 +25,9 @@ function isJson(item) {
 }
 
 window.onload = async () => {
+    const lastFetched = localStorage.getItem('lastFetched');
+    if(lastFetched) targetArea.innerHTML = lastFetched;
+
     fetch('https://repyh-middleware.cjho1.repl.co/barky').then(async res => {
         const objectKey = await res.json();
         firebase.initializeApp(objectKey);
@@ -52,6 +55,7 @@ window.onload = async () => {
                         quota: query.data().quota-1
                     })
                     targetArea.innerHTML = isJson(fetched) ? JSON.stringify(fetched, undefined, 4) : fetched;
+                    localStorage.setItem('lastFetched', isJson(fetched) ? JSON.stringify(fetched, undefined, 4) : fetched)
                     if(query.data().quota-1 <= 2) quotaField.classList.add('red');
                 })
             })
@@ -80,6 +84,7 @@ window.onload = async () => {
                         quota: query.data().quota-1
                     })
                     targetArea.innerHTML = isJson(fetched) ? JSON.stringify(fetched, undefined, 4) : fetched;
+                    localStorage.setItem('lastFetched', isJson(fetched) ? JSON.stringify(fetched, undefined, 4) : fetched)
                 })
             })
             quotaField.value = query.quota.toLocaleString();
