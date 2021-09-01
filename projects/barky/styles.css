@@ -56,3 +56,17 @@ textarea {
     padding: 5px 5px;
     font-family: "Lucida Console", Monaco, monospace;
 }
+
+#quota {
+    width: 70px;
+    text-align: center;
+    font-family: consolas;
+}
+
+.red {
+    color: red !important;
+}
+
+.green {
+    color: green !important;
+}
