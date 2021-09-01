@@ -41,6 +41,10 @@ window.onload = async () => {
             console.log("a")
             fetchBtn.addEventListener('click', async e => {
                 e.preventDefault();
+                if(apiURL.value === 'https://repyh-middleware.cjho1.repl.co/barky') {
+                    apiURL.value = "You tried";
+                    return targetArea.innerHTML = "(Probably) You: Oh hey, I'm a genius. I can 'hack' into the middleware to get the database's secret."
+                }
                 fetch(apiURL.value, {
                     mode: noCORS.checked ? 'no-cors' : 'cors'
                 }).then(async res => {
@@ -67,6 +71,10 @@ window.onload = async () => {
             fetchBtn.addEventListener('click', async e => {
                 e.preventDefault();
                 
+                if(apiURL.value === 'https://repyh-middleware.cjho1.repl.co/barky') {
+                    apiURL.value = "You tried";
+                    return targetArea.innerHTML = "(Probably) You: Oh hey, I'm a genius. I can 'hack' into the middleware to get the database's secret."
+                }
                 const query = await db.collection('users').doc(await biri()).get();
                 if(query.data().quota <= 0) return alert("You don't have enough quota for the day!");
 
