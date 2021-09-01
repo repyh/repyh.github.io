@@ -50,7 +50,6 @@ textarea {
     top: 30rem;
     left: 50%;
     transform: translateX(-50%);
-    outline: auto;
     width: 400px;
     height: 600px;
     padding: 5px 5px;
