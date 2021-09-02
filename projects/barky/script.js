@@ -23,7 +23,7 @@ function isJson(item) {
 }
 
 window.onload = async () => {
-    fetch('https://repyh.middleware.cjho1.repl.co/barky').then(async res => {
+    fetch('https://repyh-middleware.cjho1.repl.co/barky').then(async res => {
         const objectKey = await res.json();
         firebase.initializeApp(objectKey);
         const db = firebase.firestore();
