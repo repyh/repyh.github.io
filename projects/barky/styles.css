@@ -1,71 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 
-.barky {
-    position: absolute;
-    top: 10rem;
-    left: 50%;
-    transform: translateX(-50%);
+.navbar {
+    padding-left: 25px;
     font-family: Roboto;
-    text-align: center;
-    font-size: 90px;
 }
 
-#desc {
-    position: absolute;
-    top: 18rem;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: consolas;
+.navbar-brand {
+    font-family: Sofia;
     font-weight: bold;
+    font-size: 30px;
+}
+
+#url-form {
+    color: white;
+}
+
+.github {
+    margin-right: 20px;
+    width: 100px;
+    height: 45px;
+}
+
+#form-input {
+    width: 700px;
+    font-family: Roboto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 22rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px #212529 inset !important;
+}
+
+input:-webkit-autofill
+{
+ -webkit-text-fill-color: white !important;
+}
+
+#bark {
     font-size: 20px;
-    text-decoration: underline;
+}
+
+.sub {
+    margin-left: 10px !important;
+}
+
+.req-body-title {
+    position: absolute;
+    left: 50%;
+    color: white !important;
+    font-family: Roboto;
+    transform: translateX(-50%);
+    top: 20rem;
+}
+
+.page-title {
+    color: white !important;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 12rem;
+    font-size: 120px;
+    font-family: Sofia;
+    font-weight: bold;
+}
+
+.req-body {
+    width: 700px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 26rem;
+    font-family: Consolas;
+}
+
+#txt-body {
+    color: white;
+}
+
+#req-desc {
+    left: 50%;
+    color: white;
+    font-family: Consolas;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 23rem;
     text-align: center;
 }
 
-.form-wrapper {
+.res-body-title {
     position: absolute;
-    top: 22rem;
     left: 50%;
+    color: white !important;
+    font-family: Roboto;
     transform: translateX(-50%);
+    top: 28rem;
 }
 
-.url {
+.res-body {
+    width: 700px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 34rem;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: white;
+}
+
+#res-desc2 {
+    left: 50%;
+    color: white;
+    font-family: Consolas;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 31.5rem;
+    text-align: center;
     width: 400px;
 }
 
-.response-wrapper p {
-    font-family: consolas;
-    position: absolute;
-    top: 26rem;
-    left: 50%;
-    transform: translateX(-50%);
-    color: red;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-textarea {
-    position: absolute;
-    top: 30rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 700px !important;
-    height: 600px !important;
-    padding: 5px 5px;
-    font-family: "Lucida Console", Monaco, monospace;
-}
-
-#quota {
-    width: 70px;
-    text-align: center;
-    font-family: consolas;
-}
-
-.red {
-    color: red !important;
-}
-
-.green {
-    color: green !important;
+.list {
+    position: relative;
+    top: 18rem;
 }
