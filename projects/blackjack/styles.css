@@ -1,0 +1,58 @@
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+#hit {
+    width: 8rem !important;
+    margin-top: .5rem;
+    margin-left: .10rem;
+    margin-right: .10rem;
+}
+
+.dealer {
+    margin-top: 1rem;
+    font-family: consolas;
+}
+
+#stand {
+    width: 8rem !important;
+    margin-top: .5rem;
+    margin-left: .10rem;
+    margin-right: .10rem;
+}
+
+#new {
+    width: 8rem !important;
+    margin-top: .5rem;
+    margin-left: .10rem;
+    margin-right: .10rem;
+}
+
+.title-content h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container table {
+    width: 100%;
+    display: inline;
+}
+
+.content {
+    margin-top: 1rem;
+}
+
+.container table tr th {
+    display: inline-table;
+    margin-right: .5rem;
+    margin-left: .5rem;
+}
+
+.card img {
+    width: 10rem;
+}
