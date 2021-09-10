@@ -1,9 +1,10 @@
 const cards = [generateCard()];
-const opDeck = [generateCard(), , generateCard()];
+const opDeck = [generateCard()];
 let gameState = 1;
 
 window.onload = () => {
     init();
+    initDealer();
 }
 
 document.querySelector('#hit').addEventListener('click', e => {
@@ -11,7 +12,7 @@ document.querySelector('#hit').addEventListener('click', e => {
     if(gameState !== 1) return;
     hit(cards);
     init();
-    console.log(cards.length)
+    while(opDeck.map(c => getCardValue(c)).reduce((a, v) => a + v) < 16) hit(opDeck);
 })
 
 document.querySelector('#stand').addEventListener('click', e => {
@@ -27,11 +28,16 @@ document.querySelector('#stand').addEventListener('click', e => {
     const target2 = document.querySelector('.content');
     target2.innerHTML = target2.innerHTML + '\n' + '<button type="button" id="new" onclick="location.reload()" class="btn btn-primary" class="functional">New Game</button>';
 
+    initDealer();
+})
+
+function initDealer() {
     const target3 = document.querySelector('.dealer');
+    target3.innerHTML = '';
     const h5 = document.createElement('h5');
     h5.innerText = `Dealer's Value - ${opDeck.map(c => getCardValue(c)).reduce((a, v) => a + v)}`;
     target3.appendChild(h5);
-})
+}
 
 function init() {
     const table = document.querySelector('tr');
@@ -51,7 +57,7 @@ function checkWinCondition() {
     const total = cards.map(c => getCardValue(c)).reduce((a, v) => a + v);
     const total2 = opDeck.map(c => getCardValue(c)).reduce((a, v) => a + v);
     if(total > 21) return false;
-    if(21-total > 21-total2) return false;
+    if(21-total > 21-total2 && total2 <= 21) return false;
     return true;
 }
 
