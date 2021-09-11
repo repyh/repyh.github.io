@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Type</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+    <link rel="stylesheet" href="styles.css">
+    <body class="bg-dark">
+        <div class="content">
+            <h1 class="timer">60</h1>
+            <p class="text"></p>
+            <div class="type">
+                <div class="mb-3">
+                    <input type="text" class="form-control input bg-dark btn-outline-primary" id="input" oninput="onInput()" placeholder="Start Typing..." disabled>
+                </div>
+                <button class="btn btn-dark btn-outline-primary start" onclick="init()">Start Timer</button>
+            </div>
+        </div>
+    </body>
+    <script defer src="script.js"></script>
+</html>
