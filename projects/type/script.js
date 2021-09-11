@@ -28,7 +28,7 @@ function init() {
         clearInterval(interval);
         document.querySelector('.timer').innerHTML = 0;
         input.disabled = true;
-        type.innerHTML = type.innerHTML += `\n<button class="btn btn-primary start" disabled>Your WPM - ${correctWords.length}</button>\n<button class="btn btn-primary start" onclick="location.reload()">Restart</button>`;
+        type.innerHTML += `\n<button class="btn btn-primary start" disabled>Your WPM - ${correctWords.length}</button>\n<button class="btn btn-primary start" onclick="location.reload()">Restart</button>`;
     }, 60000)
 }
 
