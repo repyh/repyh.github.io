@@ -1,15 +1,16 @@
 const text = document.querySelector('.text');
 const input = document.querySelector('.input');
-let word = generateWord(12);
 const startButton = document.querySelector('.start');
 const type = document.querySelector('.type');
+const ghostField = document.querySelector('.ghost');
 let correctWords = [];
 let currentWord = "";
 let currentTarget;
 let resetCount = 0;
 let timer = 60;
+let word = generateWord(12);
+let nextWord = generateWord(12);
 
-console.log(word)
 window.onload = () => {
     setup();
 }
@@ -28,7 +29,7 @@ function init() {
         clearInterval(interval);
         document.querySelector('.timer').innerHTML = 0;
         input.disabled = true;
-        type.innerHTML += `\n<button class="btn btn-primary start" disabled>Your WPM - ${correctWords.length}</button>\n<button class="btn btn-primary start" onclick="location.reload()">Restart</button>`;
+        type.innerHTML = type.innerHTML += `\n<button class="btn btn-primary start" disabled>Your WPM - ${correctWords.length}</button>\n<button class="btn btn-primary start" onclick="location.reload()">Restart</button>`;
     }, 60000)
 }
 
@@ -49,7 +50,8 @@ function onInput() {
             currentTarget = text.innerHTML.split(/<\/span>/g).map(w => w.slice(w.indexOf('>')+1))[correctWords.length-(12*resetCount)];
 
             if(correctWords.length % 12 === 0 && correctWords.length !== 0) {
-                word = generateWord(12);
+                word = nextWord;
+                nextWord = generateWord(12);
                 resetCount++;
                 setup();
             }
@@ -64,6 +66,8 @@ function setup() {
     }
     text.innerHTML = addString;
     currentTarget = text.innerHTML.split(/<\/span>/g).map(w => w.slice(w.indexOf('>')+1))[correctWords.length-(12*resetCount)];
+
+    ghostField.innerHTML = nextWord;
 }
 
 function generateWord(amt) {
