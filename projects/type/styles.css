@@ -19,15 +19,23 @@
     text-align: center;
     color: white;
     font-size: 10rem;
-    margin-bottom: 2rem;
 }
 
 .text {
     font-family: consolas;
     text-align: center;
     font-size: 1.8rem;
+    margin-bottom: .8rem;
+    color: white;
+}
+
+.ghost {
+    font-family: consolas;
+    text-align: center;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
     color: white;
+    opacity: 0.5;
 }
 
 .start {
