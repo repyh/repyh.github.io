@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@500&display=swap');
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.chatbox {
+    width: 95vw;
+    height: 90vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-family: Montserrat;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+#username-input {
+    position: absolute;
+    bottom: 2%;
+    width: 12.1rem;
+    left: .6rem;
+}
+
+#message {
+    position: absolute;
+    bottom: 2%;
+    width: 56.7rem;
+    left: 13.3rem;
+}
+
+#send {
+    position: absolute;
+    bottom: 2%;
+    width: 9.8rem;
+    right: .6rem;
+}
+
+.chats {
+    margin-top: 6rem;
+    list-style: none;
+    height: 24rem;
+    overflow-y: scroll;
+}
+
+.chats li {
+    width: 97.5%;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+.right {
+    position: relative;
+    margin-right: 2rem;
+    text-align: right;
+}
